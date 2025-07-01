@@ -17,7 +17,8 @@ export default function Chat() {
       const newContext = context + `User: ${input}\n`;
       setContext(newContext);
 
-      const res = await fetch('ticket-system-api-b8ctczeqbmg0ceeh.southeastasia-01.azurewebsites.net/api/chat', {
+      const res = await fetch('https://ticket-system-api-b8ctczeqbmg0ceeh.southeastasia-01.azurewebsites.net/api/chat
+', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
