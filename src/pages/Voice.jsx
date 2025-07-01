@@ -50,7 +50,8 @@ ETA: <number>
 
 Complaint: ${inputText}`;
 
-      const response = await axios.post('ticket-system-api-b8ctczeqbmg0ceeh.southeastasia-01.azurewebsites.net/api/chat', {
+      const response = await axios.post('https://ticket-system-api-b8ctczeqbmg0ceeh.southeastasia-01.azurewebsites.net/api/chat
+', {
         prompt: formattedPrompt,
       });
 
